@@ -1,0 +1,48 @@
+body.Img1{
+	background-color: PaleGoldenrod;
+		background-color: #c8d7e8;
+		background-position: center;
+		background-repeat: no-repeat;
+}
+
+marquee {
+	height: 100px;
+}
+
+div.Div1{
+	position: absolute;
+	top: 300px;
+	left: 50px;
+	width:600px;
+	height:350px;
+	overflow:scroll;
+	border: 10px solid #194a6c;
+	background-image: url("../Imagenes/Flores.jpg");
+	text-align: left;
+	color: Peru;
+	font-size: 16;
+}
+
+div.Div2{
+	width:500px;
+}
+
+div.Div3{
+	position: absolute;
+	top: 300px;
+	left: 930px;
+	width:600px;
+	height:350px;
+	overflow:scroll;
+	border: 10px solid #194a6c;
+	background-image: url("../Imagenes/Azul.jpg");
+	text-align: left;
+	color: Peru;
+	font-size: 16;
+}
+
+a{
+	font-style:Italic;
+	font-size:20px;
+	color: Blue;
+}

@@ -1,0 +1,68 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>ETE-CM</title>
+	<link rel="stylesheet" type="text/css" href="../../Estilos/Estilo3-MCPE.css">
+	<link rel="icon" href="../../Imagenes/ETE.png" type="image/x-icon">
+</head>
+
+<div class="loading-screen">
+    <div class="loading">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+<div class="content">
+
+<body style="background-color: #efc180">
+	<br><br>
+	<center>
+	<span style="background: url(../../Imagenes/Fondo2.jpg); font-size: 50px; color: #7f6d3b; font-family:Modern" >
+		<b>-----------¿POR QUÉ TE INVITO?-----------</b>
+	</span>
+	</center>
+	<br><br>
+	<div class="Div2">
+	</div>
+	<br><br><br><br>
+	<text class="Cafe">
+		Hola de nuevo, me alegra que hayas decidido seguir conociento la ETE en Computación,<br>
+		para comenzar y poderte ayudar a escoger tu estudio técnico quisiera explicarte las<br>
+		razones por las cuales quiero invitarte.<br>
+		<br>
+		En primer lugar tenemos que la preparación como técnico en computación te permite<br>
+		desarrollar habilidades y obtener conocimientos necesarios no unicamente en<br>
+		la rama de la Computación o Informática, sino que en cualquiera que tu los quieras<br>
+		aplicar.<br>
+		<br>
+		Como segundo punto al tomar durante dos años el estudio tecnico la carga horaria se<br>
+		reduce considerablemente a diferencia de otras ETE's.<br>
+		<br>
+		A mitad del segundo año vas a poder realizar tus prácticas profesionales o servicio<br>
+		social, dependiendo de cual lleves a cabo se te hará entrega de un diploma o<br>
+		la posibilidad de tramitar tu cédula profesional nivel técnico.<br>
+	</text>
+	<br><br>
+	<center>
+	<a href="../../Index-MCPE.html"><h3 class="btn">Página Index-MCPE</h3></a>
+	<br><br><br>
+	</center>
+</div>
+
+<script>
+    // Espera 5 segundos y luego oculta la pantalla de carga
+    setTimeout(() => {
+        const loadingScreen = document.querySelector('.loading-screen');
+        loadingScreen.style.opacity = '0'; // Cambia la opacidad a 0 para desvanecer
+        setTimeout(() => {
+            loadingScreen.style.display = 'none'; // Oculta la pantalla de carga
+            document.querySelector('.content').style.display = 'block'; // Muestra el contenido
+        }, 1000); // Espera 1 segundo para que la transición de desvanecimiento se complete
+    }, 3000); // 5000 ms = 5 segundos
+</script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>ETE-CM</title>
+	<link rel="stylesheet" type="text/css" href="../../Estilos/Estilo3-MCPE.css">
+	<link rel="icon" href="../../Imagenes/ETE.png" type="image/x-icon">
+</head>
+<body style="background-color: #242e47">
+
+<div class="loading-screen">
+    <div class="loading">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+<div class="content">
+
+<br><br>
+	<center>
+	<span style="background: url(../../Imagenes/Fondo7.jpg); font-size: 50px; color: #7c8a8d; font-family:Modern" >
+		<b>-----------ESTRATEGIA DESERCIÓN-----------</b>
+	</span>
+	</center>
+	<br><br>
+	<center>
+	<text class="Blanco">
+		En esta página propongo algunas cosas que a mi parecer podrían ayudar<br>
+		a disminuir la tasa de deserción de la ETE.<br>
+	</text>
+	<br><br>
+	<center>
+	<table align="top" class="Blanco" border="5" style="border-color:white; align:right" >
+	<caption><b class="Gris">Estrategia Contra La Deserción</b></caption>
+	</text>
+	<tr>
+		<th width="100">Punto</th>
+		<th width="800">Descripción</th>
+	</tr>
+	<tr>
+		<td>Trabajo asincrono</td>
+		<td>Dejar en claro desde el principio del ciclo escolar de una forma más explicita que exite la posibilidad ante una necesidad trabajar a distancia algún día cuando se requiera.</td>
+	</tr>
+	<tr>
+		<td>Reinserción</td>
+		<td>Crear o hayar soluciones para los alumnos que por alguna situación personal hayan tenido que ausentarse un largo periodo, por lo que deban de nivelarse y reincorporarse al ETE.</td>
+	</tr>
+	<tr>
+		<td>Encuestas</td>
+		<td>Crear un medio de comunicación o de consulta para conocer al termianr el tema algunas áreas de oportunidad en el tema.</td>
+	</tr>
+	</table>
+	<br><br>
+	<div class="Div5">
+	</div>
+	<br>
+	<a href="../../PagI-MCPE.html"><h3 class="btn">Página Index-MCPE</h3></a>
+	<br><br><br>
+</center>
+	</text>
+
+</div>
+
+<script>
+    // Espera 5 segundos y luego oculta la pantalla de carga
+    setTimeout(() => {
+        const loadingScreen = document.querySelector('.loading-screen');
+        loadingScreen.style.opacity = '0'; // Cambia la opacidad a 0 para desvanecer
+        setTimeout(() => {
+            loadingScreen.style.display = 'none'; // Oculta la pantalla de carga
+            document.querySelector('.content').style.display = 'block'; // Muestra el contenido
+        }, 1000); // Espera 1 segundo para que la transición de desvanecimiento se complete
+    }, 3000); // 5000 ms = 5 segundos
+</script>
+
+</body>
+</html>

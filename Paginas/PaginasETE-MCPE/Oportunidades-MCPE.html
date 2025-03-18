@@ -1,0 +1,76 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>ETE-CM</title>
+	<link rel="stylesheet" type="text/css" href="../../Estilos/Estilo3-MCPE.css">
+	<link rel="icon" href="../../Imagenes/ETE.png" type="image/x-icon">
+</head>
+<body style="background-color: #b5e5f8">
+
+<div class="loading-screen">
+    <div class="loading">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+<div class="content">
+
+<br><br>
+	<center>
+	<span style="background: url(../../Imagenes/Fondo5.jpg); font-size: 50px; color: #7c8a8d; font-family:Modern" >
+		<b>-----------NO ME GUSTA...-----------</b>
+	</span>
+	</center>
+<br><br><br>
+	<center>
+	<text class="Gris"> 
+		Aunque sea dificil de reconocer, tambien como en cualquier cosa<br>
+		existen áreas de oportunidad para manejar o que son incomodas,<br>
+		pero inevitables y lamentablemente la ETE en computación no esta<br>
+		excenta de dicha situación.
+	</text>
+	</center>
+<br><br><br>
+<center>
+	<table align="top" class="Gris" border="5" style="border-color:#268fb7; align:right" >
+	<caption><b class="Gris">NO ME GUSTA DEL ETE...</b></caption>
+	</text>
+	<tr>
+		<th width="100">Punto</th>
+		<th width="800">Descripción</th>
+	</tr>
+	<tr>
+		<td>Temas</td>
+		<td>A pesar que los temas son muy interesantes, hay que tener disposición a tambien pasar por la parte teórica antes de la páctica, que puede llegar a ser cansada, aburrida o tediosa.</td>
+	</tr>
+	<tr>
+		<td>Tiempo</td>
+		<td>Una desventaja de tomar CUALQUIER estudio técnico es que reduce tu tiempo libre y es un factor que debes de considerar si vives lejos o tienes otros compromisos.</td>
+	</tr>
+	<tr>
+		<td>Retomar</td>
+		<td>Si eres una persona a la cual le aburre o provoca desinteres ver cosas que ya conoce o retomar conocimientos anteriores, te recomiendo no cursar la ETE, pues para poder mejorar o conocer pequeños Tip's se deben de retomar aprendizajes.</td>
+	</tr>
+	</table>
+	<a href="../../Index-MCPE.html"><h3 class="btn">Página Index-MCPE</h3></a>
+	<br><br><br>
+</center>
+</div>
+
+<script>
+    // Espera 5 segundos y luego oculta la pantalla de carga
+    setTimeout(() => {
+        const loadingScreen = document.querySelector('.loading-screen');
+        loadingScreen.style.opacity = '0'; // Cambia la opacidad a 0 para desvanecer
+        setTimeout(() => {
+            loadingScreen.style.display = 'none'; // Oculta la pantalla de carga
+            document.querySelector('.content').style.display = 'block'; // Muestra el contenido
+        }, 1000); // Espera 1 segundo para que la transición de desvanecimiento se complete
+    }, 3000); // 5000 ms = 5 segundos
+</script>
+
+</body>
+</html>
