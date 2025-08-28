@@ -298,7 +298,7 @@ a{
 /* Media Queries para pantallas más grandes */
 @media (min-width: 768px) {
 	marquee {
-		height:100px;
+		height:150px;
 		font-size: initial;
 	}
 
@@ -365,3 +365,4 @@ a{
 		width: auto;
 	}
 }
+
