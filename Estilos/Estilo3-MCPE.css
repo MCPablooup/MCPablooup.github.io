@@ -197,7 +197,7 @@ a{
     text-decoration:none;
     font-family: "proxima-nova", sans-serif;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 25px;
     text-transform: uppercase!important;
     letter-spacing: 2px;
     color: #fff;
@@ -267,6 +267,7 @@ a{
             transform: translateX(-100%);
 
 }
+
 
 
 
