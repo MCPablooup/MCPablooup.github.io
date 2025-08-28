@@ -69,31 +69,31 @@ div.Div5{
 }
 
 .Blanco {
-	font-size: 25; 
+	font-size: 30; 
 	color: white;
 	font-family: Tw Cen MT;
 }
 
 .Cafe {
-	font-size: 25; 
+	font-size: 30; 
 	color: #7f6d3b;
 	font-family: Tw Cen MT;
 }
 
 .Morado {
-	font-size: 25;
+	font-size: 30;
 	color: #6f59a0;
 	font-family: Tw Cen MT;
 }
 
 .Gris {
-	font-size: 25;
+	font-size: 30;
 	color:#7c8a8d;
 	font-family: Tw Cen MT;
 }
 
 .GrisO {
-	font-size: 25;
+	font-size: 30;
 	color:#2d342e;
 	font-family: Tw Cen MT;
 }
@@ -267,4 +267,5 @@ a{
             transform: translateX(-100%);
 
 }
+
 
