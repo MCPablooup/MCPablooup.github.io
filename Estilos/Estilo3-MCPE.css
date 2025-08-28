@@ -1,122 +1,146 @@
 body.Eras {
 	background-color: #fdfaf5;
-		background-image: url("../Imagenes/Fondo0.jpg");
-		background-position: center;
-		background-repeat: no-repeat;
+	background-image: url("../Imagenes/Fondo0.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 marquee {
-	height:100px;
+	height: auto;
 	font-family: Courier New;
+	font-size: 7vw; /* Tamaño de fuente relativo */
 }
 
 div.Div1{
-	left: 50px;
-	width:600px;
-	height:350px;
-	overflow:scroll;
+	left: auto; /* Eliminar left fijo para centrar */
+	width: 90%;
+	height: auto;
+	overflow: auto;
 	border: 5px solid #4668ba;
 	background-image: url("../Imagenes/Fondo.jpg");
+	background-size: cover;
 	text-align: left;
 	color: Peru;
-	font-size: 16;
+	font-size: 4vw;
+	padding: 10px;
+	box-sizing: border-box;
+	margin: 20px auto; /* Centrar */
 }
 
 div.Div2{
-	float:right;
-	width:600px;
-	height:600px;
-	overflow:scroll;
+	float: none; /* Eliminar float */
+	width: 90%;
+	height: auto;
+	overflow: auto;
 	border: 5px solid #7f6d3b;
 	background-image: url("../Imagenes/Naranja.jpg");
+	background-size: cover;
 	text-align: left;
 	color: Peru;
-	font-size: 16;
+	font-size: 4vw;
+	padding: 10px;
+	box-sizing: border-box;
+	margin: 20px auto;
 }
 
 div.Div3{
-	float:left;
-	width:600px;
-	height:600px;
-	overflow:scroll;
+	float: none; /* Eliminar float */
+	width: 90%;
+	height: auto;
+	overflow: auto;
 	border: 5px solid #f7c9c9;
 	background-image: url("../Imagenes/Rojo.jpg");
+	background-size: cover;
 	text-align: left;
 	color: Peru;
-	font-size: 16;
+	font-size: 4vw;
+	padding: 10px;
+	box-sizing: border-box;
+	margin: 20px auto;
 }
 
 div.Div4{
-	width:600px;
-	height:600px;
-	overflow:scroll;
+	width: 90%;
+	height: auto;
+	overflow: auto;
 	border: 5px solid #2d342e;
 	background-image: url("../Imagenes/ENP9-2.jpg");
+	background-size: cover;
 	text-align: left;
 	color: Peru;
-	font-size: 16;
+	font-size: 4vw;
+	padding: 10px;
+	box-sizing: border-box;
+	margin: 20px auto;
 }
 
 div.Div5{
-	width:600px;
-	height:600px;
-	overflow:scroll;
+	width: 90%;
+	height: auto;
+	overflow: auto;
 	border: 5px solid white;
 	background-image: url("../Imagenes/AzulO.jpg");
+	background-size: cover;
 	text-align: left;
 	color: Peru;
-	font-size: 16;
+	font-size: 4vw;
+	padding: 10px;
+	box-sizing: border-box;
+	margin: 20px auto;
 }
 
 .Blanco {
-	font-size: 25; 
+	font-size: 5vw;
 	color: white;
 	font-family: Tw Cen MT;
 }
 
 .Cafe {
-	font-size: 25; 
+	font-size: 5vw;
 	color: #7f6d3b;
 	font-family: Tw Cen MT;
 }
 
 .Morado {
-	font-size: 25;
+	font-size: 5vw;
 	color: #6f59a0;
 	font-family: Tw Cen MT;
 }
 
 .Gris {
-	font-size: 25;
+	font-size: 5vw;
 	color:#7c8a8d;
 	font-family: Tw Cen MT;
 }
 
 .GrisO {
-	font-size: 25;
+	font-size: 5vw;
 	color:#2d342e;
 	font-family: Tw Cen MT;
 }
 
-a{	
-	font-size: 30; 
+a{
+	font-size: 6vw;
 	color: Blue;
 	font-family: Tw Cen MT;
 }
 
 .tabla-derecha {
     margin-left: auto;
-    margin-right: 0;
-    border-collapse: collapse; /* Opcional: para que las celdas se vean mejor */
+    margin-right: auto; /* Centrar la tabla en móviles */
+    border-collapse: collapse;
+    width: 95%; /* Ajustar ancho de tabla */
+    font-size: 4vw; /* Tamaño de fuente para tabla */
 }
 
-/* Animación de carga (efecto no visto en clase */
-
-* {
-    margin: 0;
-    padding: 0;
+.tabla-derecha th, .tabla-derecha td {
+    padding: 8px; /* Espaciado interno de celdas */
+    display: block; /* Cada celda en una nueva línea para móviles */
+    width: auto; /* Ancho automático */
 }
 
+/* Animación de carga */
 .loading-screen {
     width: 100%;
     height: 100vh;
@@ -125,20 +149,22 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: opacity 1s ease; /* Transición para el desvanecimiento */
+    transition: opacity 1s ease;
+    z-index: 9999; /* Asegurar que esté por encima de todo */
 }
 
 .loading {
-	width: 80px;
+	width: 80px; /* Mantener tamaño fijo para la animación */
+	height: 80px;
 	display: flex;
 	flex-wrap: wrap;
 	animation: rotate 3s linear infinite;
 }
 
- @keyframes rotate {
+@keyframes rotate {
     to {
         transform: rotate(360deg);
-        }
+    }
 }
 
 .loading span {
@@ -152,14 +178,14 @@ a{
 @keyframes scale {
     50% {
         transform: scale(1.2);
-        }
+    }
 }
 
 .loading span:nth-child(1) {
 	border-radius: 50% 50% 0 50%;
 	background-color: #a5c9a5;
     transform-origin: bottom right;
-        }
+}
 
 .loading span:nth-child(2) {
     border-radius: 50% 50% 50% 0;
@@ -183,25 +209,26 @@ a{
 }
 
 .content {
-    display: none; 
+    display: none;
     padding: 0;
+    width: 100%; /* Asegurar que el contenido ocupe todo el ancho */
+    box-sizing: border-box;
 }
 
-/* Botones-comportamiento no visto en clase */
-
+/* Botones */
 .btn{
-    top: 40px;
-    padding:20px 90px;
-    margin: 0 10px;
-    display: inline-block;
+    top: 20px; /* Ajustar posición */
+    padding: 15px 40px; /* Reducir padding para móviles */
+    margin: 10px auto; /* Centrar y añadir margen */
+    display: block; /* Ocupar todo el ancho disponible */
     text-decoration:none;
     font-family: "proxima-nova", sans-serif;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 4vw; /* Tamaño de fuente relativo */
     text-transform: uppercase!important;
-    letter-spacing: 2px;
+    letter-spacing: 1px; /* Reducir letter-spacing */
     color: #fff;
-    cursor: hand;
+    cursor: pointer; /* Cambiado de hand a pointer */
     text-align: center;
     text-transform: capitalize;
     border-radius:0px;
@@ -212,8 +239,9 @@ a{
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     background: transparent!important;
+    box-sizing: border-box;
+    width: 80%; /* Ancho del botón */
 }
-
 
 .btn:hover{
     border: 1px solid #transparent;
@@ -225,7 +253,7 @@ a{
     height: 100%;
     display: block;
     background: #ad9c7a;
-    position: absolute;  
+    position: absolute;
     left: 0%;
     opacity: 1;
     top: 0;
@@ -234,7 +262,7 @@ a{
        -moz-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
          -o-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
             transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
-  } 
+}
 
 .btn::after {
     content: '';
@@ -265,9 +293,75 @@ a{
        -moz-transform: translateX(-100%);
         -ms-transform: translateX(-100%);
             transform: translateX(-100%);
-
 }
 
+/* Media Queries para pantallas más grandes */
+@media (min-width: 768px) {
+	marquee {
+		height:100px;
+		font-size: initial;
+	}
 
+	div.Div1{
+		left: 50px;
+		width:600px;
+		height:350px;
+		font-size: 16px;
+	}
 
+	div.Div2{
+		float:right;
+		width:600px;
+		height:600px;
+		font-size: 16px;
+	}
 
+	div.Div3{
+		float:left;
+		width:600px;
+		height:600px;
+		font-size: 16px;
+	}
+
+	div.Div4{
+		width:600px;
+		height:600px;
+		font-size: 16px;
+	}
+
+	div.Div5{
+		width:600px;
+		height:600px;
+		font-size: 16px;
+	}
+
+	.Blanco, .Cafe, .Morado, .Gris, .GrisO {
+		font-size: 25px;
+	}
+
+	a {
+		font-size: 30px;
+	}
+
+	.tabla-derecha {
+		margin-left: auto;
+		margin-right: 0;
+		width: auto;
+		font-size: initial;
+	}
+
+	.tabla-derecha th, .tabla-derecha td {
+		display: table-cell; /* Volver a mostrar como celdas de tabla */
+		width: auto;
+	}
+
+	.btn {
+		top: 40px;
+		padding:20px 90px;
+		margin: 0 10px;
+		display: inline-block;
+		font-size: 25px;
+		letter-spacing: 2px;
+		width: auto;
+	}
+}
