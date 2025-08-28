@@ -1,48 +1,90 @@
 body.Img1{
-	background-color: PaleGoldenrod;
-		background-color: #c8d7e8;
-		background-position: center;
-		background-repeat: no-repeat;
+	background-color: #c8d7e8;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover; /* Asegura que la imagen de fondo cubra todo el cuerpo */
 }
 
 marquee {
-	height: 100px;
+	height: auto;
+	font-size: 8vw; /* Tamaño de fuente relativo */
 }
 
 div.Div1{
-	position: absolute;
-	top: 300px;
-	left: 50px;
-	width:600px;
-	height:350px;
-	overflow:scroll;
+	position: static; /* Cambiar a static para flujo normal en móviles */
+	width: 90%;
+	height: auto;
+	overflow: auto;
 	border: 10px solid #194a6c;
 	background-image: url("../Imagenes/Flores.jpg");
+	background-size: cover; /* Asegura que la imagen de fondo cubra el div */
 	text-align: left;
 	color: Peru;
-	font-size: 16;
+	font-size: 4vw;
+	padding: 10px;
+	box-sizing: border-box;
+	margin: 20px auto;
 }
 
 div.Div2{
-	width:500px;
+	width: 90%;
+	margin: 0 auto;
 }
 
 div.Div3{
-	position: absolute;
-	top: 300px;
-	left: 930px;
-	width:600px;
-	height:350px;
-	overflow:scroll;
+	position: static; /* Cambiar a static para flujo normal en móviles */
+	width: 90%;
+	height: auto;
+	overflow: auto;
 	border: 10px solid #194a6c;
 	background-image: url("../Imagenes/Azul.jpg");
+	background-size: cover;
 	text-align: left;
 	color: Peru;
-	font-size: 16;
+	font-size: 4vw;
+	padding: 10px;
+	box-sizing: border-box;
+	margin: 20px auto;
 }
 
 a{
 	font-style:Italic;
-	font-size:20px;
+	font-size: 4.5vw;
 	color: Blue;
+}
+
+/* Media Queries para pantallas más grandes */
+@media (min-width: 768px) {
+	marquee {
+		height: 100px;
+		font-size: initial;
+	}
+
+	div.Div1{
+		position: absolute;
+		top: 300px;
+		left: 50px;
+		width:600px;
+		height:350px;
+		overflow:scroll;
+		font-size: 16px;
+	}
+
+	div.Div2{
+		width:500px;
+	}
+
+	div.Div3{
+		position: absolute;
+		top: 300px;
+		left: 930px;
+		width:600px;
+		height:350px;
+		overflow:scroll;
+		font-size: 16px;
+	}
+
+	a{
+		font-size:20px;
+	}
 }
